@@ -4,17 +4,11 @@
 <title>PHPテスト</title>
 </head>
 <body>
-    <?php echo '<p>Hello World</p>'; ?> 
-    <?php
-    echo $_SERVER['HTTP_USER_AGENT'];
-    // 分岐
-    if (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== false) {
-        echo 'あなたはInternet Explorerを使用しています<br />';
-      }
-    else{
-        echo 'あなたはInternet Explorerを使用していません<br />';
-    }
-    
-    ?>
+    <form action="action.php" method="post">
+        名前: <input type="text" name="name" />
+        年齢: <input type="text" name="age" />
+    <input type="submit" />
+
+</form>
 </body>
 </html>
