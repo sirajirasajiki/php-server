@@ -4,6 +4,6 @@
 <title>PHPテスト</title>
 </head>
 <body>
-    これはテストページです。
+    <?php echo '<p>Hello World</p>'; ?> 
 </body>
 </html>
